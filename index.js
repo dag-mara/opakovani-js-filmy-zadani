@@ -18,8 +18,8 @@ fetch('https://apps.kodim.cz/daweb/trening-api/apis/movie-api/movies')
                 <p class="movie__genre">${movie.genres.join(', ')}</p>
             </div>
             ` 
-            movieList.innerHTML = movieTemplate;
-            console.log(movie);
+            movieList.innerHTML += movieTemplate;
+            console.log(movieTemplate);
         });
     });
 }
